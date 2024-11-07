@@ -47,6 +47,11 @@
     background: linear-gradient(180deg, #777 0%, #fff 32%);
   }
   
+  .switch.on {
+    margin-top: 5px;
+    background: linear-gradient(0deg, #777 0%, #fff 32%);
+    
+  }
   /* Conjunto lampada: 
     - suporte de teto da lampada
     - fio
@@ -92,6 +97,20 @@
     background: #555;
     z-index: -1;
   }
+
+  .bulb.on {
+    background: yellow;
+    box-shadow: 
+    0 0 100px yellow,
+    0 0 120px red;
+    z-index: -1;
+
+  }
+
+  .bulb.on::before {
+    background: yellow;
+
+  }
   
   /* Suporte de teto */
   .support {
@@ -110,6 +129,7 @@
     background: black;
     transform: translateY(-5%);
     margin-bottom: -20px;
+    z-index: -1;
   }
   
   @media screen and (max-width: 768px) {
