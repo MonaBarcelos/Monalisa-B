@@ -1,0 +1,30 @@
+<html>
+<body>
+
+<script type="text/javascript">
+
+    function EnterTab(InputId,Evento){
+
+        if(Evento.keyCode == 13){       
+
+            document.getElementById(InputId).focus();
+
+        }
+
+    }
+
+</script>
+
+<input type="editbox" id="input1" onkeydown="javascript:EnterTab('input2',event)">
+<p>
+<input type="editbox" id="input2" onkeydown="javascript:EnterTab('input3',event)">
+<p>
+<input type="editbox" id="input3" onkeydown="javascript:EnterTab('input4',event)">
+<p>
+<input type="checkbox" id="input4" onkeydown="javascript:EnterTab('input5',event)">
+<p>
+
+<input type="submit" id="input5">
+
+</body>
+</html>
